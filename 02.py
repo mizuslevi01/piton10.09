@@ -1,11 +1,11 @@
 utasok = [72, 85, 64, 91, 58, 103, 77, 69, 88, 95, 60, 81]
 
-teherbiras = int(input("2. feladat: A lift teherbírása (kg): "))
+max_teherbiras = int(input("2. feladat: A lift teherbírása (kg): "))
 
 osszeg = 0
 for tomeg in utasok:
     osszeg = osszeg + tomeg
-if osszeg <= teherbiras:
+if osszeg <= max_teherbiras:
     print(f"3. feladat: Az összes tömeg {osszeg} kg. Mindenki elfér.")
 else:
     print(f"3. feladat: Az összes tömeg {osszeg} kg. Nem fér el mindenki.")
